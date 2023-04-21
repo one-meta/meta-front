@@ -1,0 +1,29 @@
+services:
+  frontend:
+    build:
+      context: .
+    container_name: meta_frontend
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
+    networks:
+      - meta-network
+    # 宿主:容器
+    ports:
+      - 80:80
+    # - 443:443
+    environment:
+      - META_BACKEND_HOST=meta_backend
+      - META_BACKEND_PORT=9001
+    volumes:
+      - ./.nginx/default.conf.template:/etc/nginx/templates/default.conf.template
+
+networks:
+  meta-network:
+    driver: bridge
+    name: meta-network
+    aliases:
+      - meta_backend
