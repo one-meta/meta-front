@@ -10,7 +10,9 @@ services:
         max_attempts: 5
         window: 120s
     networks:
-      - meta-network
+      meta-network:
+        aliases:
+          - meta_backend
     # 宿主:容器
     ports:
       - 80:80
@@ -25,5 +27,3 @@ networks:
   meta-network:
     driver: bridge
     name: meta-network
-    aliases:
-      - meta_backend
