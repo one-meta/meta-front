@@ -8,7 +8,7 @@
 2. 安装依赖：`npm install`或者`yarn`
 3. 运行：`npm start`或者`yarn start:dev`
 
-## 与`meta-front-g`一起使用【项目使用可参考 meta wiki】
+## 与`meta-front-g`一起使用【项目使用可参考 [meta wiki](https://github.com/one-meta/meta/wiki/)】
 
 1. 运行 meta-front-g：`meta-front-g`或者`meta-front-g -path="Meta-Front/src/services/meta/typings.d.ts"`
 2. meta-front-g 同级目录下，会生成 Column、Pages、routes.ts 文件
