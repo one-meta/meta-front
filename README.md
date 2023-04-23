@@ -14,11 +14,11 @@
 2. meta-front-g 同级目录下，会生成 Column、Pages、routes.ts 文件
 3. 根据实际需求
 
-`routes.ts`文件的路由，复制到`config/routes.ts`
+	`routes.ts`文件的路由，复制到`config/routes.ts`
 
-`Cloumn`下的列文件，复制到`src/columns`，可以根据实际修改属性，列标题等
+	`Cloumn`下的列文件，复制到`src/columns`，可以根据实际修改属性，列标题等
 
-`Pages`下的页面文件，复制到`src/pages`，根据实际修改页面，index.tsx 可以参考代码说明修改
+	`Pages`下的页面文件，复制到`src/pages`，根据实际修改页面，index.tsx 可以参考代码说明修改
 
 4. 之后运行即可
 
